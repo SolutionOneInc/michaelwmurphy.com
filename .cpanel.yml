@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/michaelwmurphy/public_html
+    - /bin/cp -f index.html favicon.svg og.jpg michael-murphy.jpg .htaccess $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/logos
+    - /bin/cp -f css/site.css $DEPLOYPATH/css/
+    - /bin/cp -f js/site.js $DEPLOYPATH/js/
+    - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png $DEPLOYPATH/logos/
