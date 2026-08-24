@@ -6,4 +6,4 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/logos
     - /bin/cp -f css/site.css $DEPLOYPATH/css/
     - /bin/cp -f js/site.js $DEPLOYPATH/js/
-    - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png $DEPLOYPATH/logos/
+    - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png logos/upwardvox.webp $DEPLOYPATH/logos/
