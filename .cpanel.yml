@@ -8,4 +8,4 @@ deployment:
     - /bin/cp -f js/site.js $DEPLOYPATH/js/
     - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png logos/upwardvox.webp $DEPLOYPATH/logos/
     - /bin/cp -f insights/protecting-your-business-from-cyber-threats.html insights/ai-at-work-leverage-and-liability.html insights/i-gave-this-security-talk-in-2021.html $DEPLOYPATH/insights/
-    - /bin/cp -f images/article-cybersecurity-shield.svg images/ai-at-work-hero.jpg $DEPLOYPATH/images/
+    - /bin/cp -f images/ai-at-work-hero.jpg images/security-talk-playbook.jpg $DEPLOYPATH/images/
