@@ -7,5 +7,5 @@ deployment:
     - /bin/cp -f css/site.css $DEPLOYPATH/css/
     - /bin/cp -f js/site.js $DEPLOYPATH/js/
     - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png logos/upwardvox.webp $DEPLOYPATH/logos/
-    - /bin/cp -f insights/protecting-your-business-from-cyber-threats.html insights/ai-at-work-leverage-and-liability.html $DEPLOYPATH/insights/
+    - /bin/cp -f insights/protecting-your-business-from-cyber-threats.html insights/ai-at-work-leverage-and-liability.html insights/i-gave-this-security-talk-in-2021.html $DEPLOYPATH/insights/
     - /bin/cp -f images/article-cybersecurity-shield.svg $DEPLOYPATH/images/
