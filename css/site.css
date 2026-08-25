@@ -176,6 +176,39 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .insight h3 { margin-top: 0.75rem; }
 .note { margin-top: 2.5rem; text-align: center; color: var(--subtle); font-size: 0.9rem; }
 
+a.insight-published {
+  text-decoration: none; display: flex; flex-direction: column;
+  transition: border-color .15s, background-color .15s;
+}
+a.insight-published:hover { border-color: var(--muted); background: var(--surface); }
+a.insight-published .meta {
+  color: var(--accent); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+}
+a.insight-published .read-link {
+  margin-top: 1rem; display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--accent); font-size: 0.875rem; font-weight: 600;
+}
+a.insight-published:hover .read-link { color: var(--accent-hover); }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--accent); color: var(--accent-fg);
+  padding: 0.75rem 1.25rem; border-radius: 0 0 0.5rem 0;
+  font-size: 0.9rem; font-weight: 500; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+.article-wrap { max-width: 45rem; margin: 0 auto; }
+.article-wrap h1 { margin-top: 0.75rem; font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 600; }
+.byline { margin-top: 0.75rem; color: var(--muted); font-weight: 500; }
+.article-body { margin-top: 2.5rem; display: grid; gap: 1.25rem; font-size: 1.05rem; line-height: 1.75; }
+.article-body p { color: var(--muted); }
+.article-body h2 { margin-top: 1.5rem; font-size: clamp(1.35rem, 2.5vw, 1.6rem); font-weight: 600; color: var(--fg); }
+.article-body h3 { margin-top: 0.75rem; font-size: 1.15rem; font-weight: 600; color: var(--fg); }
+.article-cta { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+.article-cta p { color: var(--muted); font-size: 1.05rem; }
+.article-cta .actions { margin-top: 1.5rem; }
+
 .connect { background: var(--so-soft); border-bottom: 1px solid var(--border); text-align: center; }
 .connect .intro { margin-left: auto; margin-right: auto; }
 .connect .actions { justify-content: center; }
