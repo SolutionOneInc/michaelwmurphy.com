@@ -208,6 +208,9 @@ a.insight-published:hover .read-link { color: var(--accent-hover); }
 .article-hero img { width: 100%; max-width: 30rem; height: auto; }
 .article-body { margin-top: 2.5rem; display: grid; gap: 1.25rem; font-size: 1.05rem; line-height: 1.75; }
 .article-body p { color: var(--muted); }
+.article-body ul { margin-left: 1.25rem; display: grid; gap: 0.5rem; }
+.article-body li { color: var(--muted); }
+.article-body .quote p { color: var(--fg); }
 .article-body h2 { margin-top: 1.5rem; font-size: clamp(1.35rem, 2.5vw, 1.6rem); font-weight: 600; color: var(--fg); }
 .article-body h3 { margin-top: 0.75rem; font-size: 1.15rem; font-weight: 600; color: var(--fg); }
 .article-cta { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
