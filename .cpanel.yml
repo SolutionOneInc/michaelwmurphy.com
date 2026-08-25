@@ -3,8 +3,9 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/michaelwmurphy/public_html
     - /bin/cp -f index.html favicon.svg og.jpg michael-murphy.jpg .htaccess $DEPLOYPATH/
-    - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/logos $DEPLOYPATH/insights
+    - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/logos $DEPLOYPATH/insights $DEPLOYPATH/images
     - /bin/cp -f css/site.css $DEPLOYPATH/css/
     - /bin/cp -f js/site.js $DEPLOYPATH/js/
     - /bin/cp -f logos/ate.png logos/cardinal.jpg logos/solutionone.png logos/upwardvox.webp $DEPLOYPATH/logos/
     - /bin/cp -f insights/protecting-your-business-from-cyber-threats.html $DEPLOYPATH/insights/
+    - /bin/cp -f images/article-cybersecurity-shield.svg $DEPLOYPATH/images/

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a shield representing layered cybersecurity defenses protecting a network of connected endpoints">
+  <circle cx="320" cy="140" r="145" fill="#e8eef5" />
+  <circle cx="320" cy="140" r="100" fill="none" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="4 7" />
+
+  <line x1="320" y1="140" x2="320" y2="40" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="2 5"/>
+  <line x1="320" y1="140" x2="415" y2="109" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="2 5"/>
+  <line x1="320" y1="140" x2="379" y2="221" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="2 5"/>
+  <line x1="320" y1="140" x2="261" y2="221" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="2 5"/>
+  <line x1="320" y1="140" x2="225" y2="109" stroke="#e4e0da" stroke-width="1.5" stroke-dasharray="2 5"/>
+
+  <g fill="#1e3a5f">
+    <circle cx="320" cy="40" r="11"/>
+    <circle cx="415" cy="109" r="11"/>
+    <circle cx="379" cy="221" r="11"/>
+    <circle cx="261" cy="221" r="11"/>
+    <circle cx="225" cy="109" r="11"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="320" cy="40" r="4"/>
+    <circle cx="415" cy="109" r="4"/>
+    <circle cx="379" cy="221" r="4"/>
+    <circle cx="261" cy="221" r="4"/>
+    <circle cx="225" cy="109" r="4"/>
+  </g>
+
+  <g transform="translate(320,140) scale(5.4) translate(-12,-12)">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#1e3a5f"/>
+  </g>
+  <path d="M299,142 L314,157 L344,115" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
