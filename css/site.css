@@ -17,6 +17,8 @@
   --cardinal-soft: #f6eceb;
   --uv: #e8522a;
   --uv-soft: #fdeae2;
+  --shc: #294635;
+  --shc-soft: #eaf0ec;
   --logo-band: #ffffff;
   --radius: 1rem;
   --font: Inter, ui-sans-serif, system-ui, sans-serif;
@@ -116,9 +118,10 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .intro { margin-top: 1rem; max-width: 40rem; color: var(--muted); font-size: 1.05rem; }
 
 .about-grid, .focus-grid, .company-grid, .insight-grid { margin-top: 2.5rem; display: grid; gap: 1rem; }
-@media (min-width: 640px) { .focus-grid, .company-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 640px) { .focus-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 768px) { .insight-grid { grid-template-columns: 1fr 1fr 1fr; } }
-@media (min-width: 1024px) { .company-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.company-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.company-grid .venture { flex: 1 1 16rem; max-width: 20rem; }
 @media (min-width: 1024px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
 
 .about-copy { margin-top: 1.5rem; display: grid; gap: 1rem; color: var(--muted); }
@@ -150,6 +153,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .venture.ate { background: var(--ate-soft); border-color: color-mix(in srgb, var(--ate-gold) 25%, var(--border)); }
 .venture.cardinal { background: var(--cardinal-soft); border-color: color-mix(in srgb, var(--cardinal) 20%, var(--border)); }
 .venture.uv { background: var(--uv-soft); border-color: color-mix(in srgb, var(--uv) 20%, var(--border)); }
+.venture.shc { background: var(--shc-soft); border-color: color-mix(in srgb, var(--shc) 20%, var(--border)); }
 .venture-logo {
   height: 11rem; display: flex; align-items: center; justify-content: center;
   background: var(--logo-band); border-bottom: 1px solid var(--border); padding: 0 1.25rem;
@@ -159,12 +163,14 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .venture.ate img { height: 8rem; }
 .venture.cardinal img { height: 9rem; }
 .venture.uv img { height: 3.5rem; }
+.venture.shc img { height: 3rem; }
 .venture-body { padding: 1.5rem 1.75rem; display: flex; flex-direction: column; flex: 1; }
 .kind { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .venture.so .kind, .venture.so .ext { color: var(--so); }
 .venture.ate .kind, .venture.ate .ext { color: var(--ate-gold); }
-.venture.cardinal .kind { color: var(--cardinal); }
+.venture.cardinal .kind, .venture.cardinal .ext { color: var(--cardinal); }
 .venture.uv .kind, .venture.uv .ext { color: var(--uv); }
+.venture.shc .kind, .venture.shc .ext { color: var(--shc); }
 .venture h3 { margin-top: 0.5rem; font-size: 1.25rem; font-weight: 600; }
 .venture-body > p:last-of-type { margin-top: 0.75rem; flex: 1; color: var(--muted); font-size: 0.9rem; }
 .ext {
